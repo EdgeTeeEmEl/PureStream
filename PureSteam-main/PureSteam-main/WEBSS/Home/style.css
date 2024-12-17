@@ -1,0 +1,274 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth ;
+}
+
+#absolutecinema {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.wrapper {
+    width: 1100px;
+    margin:auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 40px;
+    font-weight: bold;
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #dbf2ff;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #0089ba;
+    z-index: 1;
+    border-bottom: 1px solid black;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 35px;
+
+
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "comic sans ms";
+    color: #0089ba;
+}
+
+.kolom .deskripsi2 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "comic sans ms";
+    color: #0089ba;
+}
+
+h2 {
+    font-family: "comic sans ms";
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #0089ba;
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-biru {
+    background: lightskyblue;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover {
+    background:#00afff ;
+    text-decoration: none;
+}
+
+p {
+    margin:  10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+.mid {
+    text-align: center;
+    width: 100%;
+    font-family: "comic sans ms";
+
+}
+
+#contact {
+    background: #dedede;
+    padding:50px 0px 50px 0px;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: "comic sans ms";
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #47c259;
+    width: 100%;
+    line-height: 50px;
+}
+
+#Copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+    }
+}
+
+/* Popup background container */
+.popup-container {
+    display: none;  /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+/* Popup box styling */
+.popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 90%; /* Responsive on smaller screens */
+    text-align: center;
+    z-index: 1001;
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure consistent sizing */
+}
+
+/* Buttons styling */
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    background-color: #008CBA;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #005f73;
+}
+
+/* Close button */
+button[type="button"] {
+    background-color: #f44336; /* Red for "Close" button */
+}
+
+button[type="button"]:hover {
+    background-color: #d32f2f;
+}
