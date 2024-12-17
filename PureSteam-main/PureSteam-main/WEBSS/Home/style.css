@@ -11,6 +11,12 @@ body {
     scroll-behavior: smooth ;
 }
 
+.divgambar {
+    width: 100%;
+    height: auto;
+    background-color: blue;
+}
+
 #absolutecinema {
     display: block;
     margin-left: auto;
